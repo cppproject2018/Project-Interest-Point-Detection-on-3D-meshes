@@ -4,8 +4,13 @@ class vertex{
 private:
     int index;
 public:
-    double x,y,z;
+    double x;
+    double y;
+    double z;
+
     vertex();
+    ~vertex();
+
     double getx();
     double gety();
     double getz();
@@ -13,8 +18,6 @@ public:
     void sety(double );
     void setz(double );
     void setxyz(double, double, double);
-
-
 
 };
 
