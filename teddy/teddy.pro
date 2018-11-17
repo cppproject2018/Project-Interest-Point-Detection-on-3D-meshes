@@ -26,10 +26,16 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    vertex.cpp \
+    face.cpp \
+    mesh.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    vertex.h \
+    face.h \
+    mesh.h
 
 FORMS += \
         mainwindow.ui
