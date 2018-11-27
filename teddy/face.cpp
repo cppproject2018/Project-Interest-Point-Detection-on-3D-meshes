@@ -39,3 +39,11 @@ void face::addvertex(int vval){
 
 }
 
+void face::addvertices(int v1, int v2, int v3){
+
+    verts.push_back(v1);
+    verts.push_back(v2);
+    verts.push_back(v3);
+
+}
+

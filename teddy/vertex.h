@@ -2,12 +2,12 @@
 #define VERTEX_H
 class vertex{
 private:
-    int index;
+//    int vIndex;
 public:
     double x;
     double y;
     double z;
-
+    int vIndex;
     vertex();
     ~vertex();
 

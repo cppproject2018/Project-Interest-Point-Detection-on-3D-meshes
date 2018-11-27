@@ -9,14 +9,17 @@ using namespace std;
 class mesh{
 
 private:
-    vector<face> faces;
-    vector<vertex> vertices;
+//    vector<face> faces;
+//    vector<vertex> vertices;
 
 public:
     mesh();
     mesh(const char*, const char*);
     ~mesh();
-    void loadFromFile(const char* filename_vert, const char* filename_tri);
+    vector<face> faces;
+    vector<vertex> vertices;
+
+    bool readFile_Intialize(const char* ,const char*);
 
 };
 
