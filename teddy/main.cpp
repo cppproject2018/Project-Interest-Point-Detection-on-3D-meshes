@@ -14,8 +14,10 @@ int main(int argc, char *argv[])
     w.show();
     string file1="C:\\Users\\Teddyw\\Documents\\DevC++\\david0.vert";
     string file2="C:\\Users\\Teddyw\\Documents\\DevC++\\david0.tri";
+    string file3="C:\\Users\\Teddyw\\Documents\\DevC++\\seashell.off";
     int ringNo = 5;
-    mesh m(file1.c_str(),file2.c_str());
+//    mesh m(file1.c_str(),file2.c_str());
+    mesh m(file3.c_str());
     harrisoperator hop(m,ringNo);
     hop.calculateHarrisResponse();
 
