@@ -1,5 +1,7 @@
 #ifndef VERTEX_H
 #define VERTEX_H
+#include <set>
+using namespace std;
 class vertex{
 private:
 //    int vIndex;
@@ -8,6 +10,7 @@ public:
     double y;
     double z;
     int vIndex;
+    set<int> neighbours;
     vertex();
     ~vertex();
 
@@ -18,6 +21,8 @@ public:
     void sety(double );
     void setz(double );
     void setxyz(double, double, double);
+    void addNeighbour(int );
+    set<int> getNeighbours();
 
 };
 

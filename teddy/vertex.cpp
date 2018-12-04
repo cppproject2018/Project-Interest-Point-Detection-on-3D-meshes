@@ -54,4 +54,10 @@ void vertex::setxyz(double xval, double yval, double zval){
     x =  xval; y = yval; z = zval;
 
 }
+void vertex::addNeighbour(int v){
+    neighbours.insert(v);
+}
+set<int> vertex::getNeighbours(){
+        return neighbours;
+}
 
