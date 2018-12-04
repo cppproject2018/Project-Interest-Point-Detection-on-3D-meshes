@@ -13,7 +13,7 @@ using namespace std;
 class harrisoperator{
 private:
     int ringSize;
-    vector<int> harrisRPoints;// save the harrisresponse of each vertex
+    vector<double> harrisRPoints;// save the harrisresponse of each vertex
     mesh meshes;
 public:
     harrisoperator();
@@ -21,8 +21,9 @@ public:
     ~harrisoperator();
 
     set<int> calculateNeighbourhood(int, vector<face>);
-    set<int> calculateRingNeighbourhood(int, vector<face>, set<int> *); //neighbourhood considering k rings
+    set<int> calculateRingNeighbourhood(int); //neighbourhood considering k rings
     void calculateHarrisResponse();
+    bool isLocalMaxima(unsigned int);
 
 };
 
