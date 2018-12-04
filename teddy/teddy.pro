@@ -48,3 +48,5 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+INCLUDEPATH += "D:\\Downlaods\\eigen-eigen-b3f3d4950030\\eigen-eigen-b3f3d4950030"
